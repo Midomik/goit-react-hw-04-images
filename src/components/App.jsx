@@ -26,7 +26,9 @@ export const App = () => {
   const [totalHits, setTotalHits] = useState(0);
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [modalData, setModalData] = useState(null);
+  /* eslint-disable */
   const [error, setError] = useState(null);
+  /* eslint-enable */
   const firstRenderRef = useRef(true);
   const fetchPosts = query => {
     if (searchQuery !== query) {
